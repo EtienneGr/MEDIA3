@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i');
+
+body {
+    font-family: 'Lato';
+    color: #2E2E2E;
+    background-color: #F0F0F0;
+}
+.navbar {
+    background-color: #346E92;
+    min-height: 90px;
+}
+.navbar-logo {
+    height: 81px;
+    width: auto;
+}
+.navbar-nav {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.navbar-inverse {
+    border: none;
+    box-shadow: 0 5px 5px rgba(0,0,200,0.1);
+}
+.navbar-inverse .navbar-nav li a {
+    color: #FFFFFF;
+    transition: color 0.2s;
+}
+.navbar-inverse .navbar-nav li a:hover {
+    color: #C6EBFA;
+    transition: color 0.2s;
+}
+.flex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-content {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    padding: 4.0em;
+    margin-top: -20px;
+}
+.article-titre {
+    font-size: 2.7em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #346E92;
+}
+.article-chapeau {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #4E4E4E;
+    text-align: justify;
+}
+.article-illustration {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.article-heading {
+    margin: 50px 0 30px 0;
+}
+.article-paragraphe {
+    text-align: justify;
+    font-size: 1.1em;
+}
+footer {
+    padding: 0;
+    margin: 90px 0 0px 0;
+    text-align: center;
+}
