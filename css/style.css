@@ -61,6 +61,10 @@ body {
 .article-heading {
     margin: 50px 0 30px 0;
 }
+.article-sous-titre {
+    color: #346E92;
+    margin-top: 30px;
+}
 .article-paragraphe {
     text-align: justify;
     font-size: 1.1em;
