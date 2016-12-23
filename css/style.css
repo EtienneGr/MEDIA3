@@ -58,14 +58,32 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.article-heading {
-    margin: 50px 0 30px 0;
-}
 .article-sous-titre {
+    margin: 50px 0 20px 0;
     color: #346E92;
-    margin-top: 30px;
+    font-size: 2.0em;
+}
+.article-section {
+    color: #2F7FB4;
+    font-weight: 700;
+    margin: 40px 0 20px 0;
+}
+.article-titre-sous-section {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #2E2E2E;
+    margin-top: 20px;
 }
 .article-paragraphe {
+    text-align: justify;
+    font-size: 1.1em;
+}
+.article-note {
+    color: #2E2E2E;
+    font-size: 0.9em;
+    text-align: justify;
+}
+li {
     text-align: justify;
     font-size: 1.1em;
 }
