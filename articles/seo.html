@@ -24,6 +24,16 @@
     <link href="../plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 
+     <!-- Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-89744603-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 
 <body>
@@ -67,17 +77,18 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container container-content">
+    <div class="container container-content" itemscope itemtype="https://schema.org/Article">
 
         <!-- Heading Row -->
         <div class="row">
             <div class="col-md-12">
-                <h2 class="article-titre">Search Optimization Engine (SEO)</h2>
-                <p class="article-chapeau">Cet article a pour seul but de vous apporter les bases importantes sur le SEO.</p>
+                <h2 class="article-titre" itemprop="headline">Search Optimization Engine (SEO)</h2>
             </div>
             <hr>
-            <div class="col-md-12 flex-col article-illustration">
-                <div><img class="img-responsive img-rounded" src="../media/seo.png" alt="search optimization engine"></div>
+            <div class="col-md-12 flex-col article-illustration" itemscope itemprop="image" itemtype="http://schema.org/ImageObject">
+                <div><img class="img-responsive img-rounded" src="../media/seo.png" alt="droit à l'information et à l'image" itemprop="url"></div>
+                <meta itemprop="height" content="900" />
+                <meta itemprop="width" content="350" />
             </div>
         </div>
         <!-- /.row -->
@@ -169,9 +180,14 @@
         <!-- Commentary Row -->
         <div class="row">
             <div class="col-md-6 avis">
-                <div class="note">
-                    <span>Commentaire de : <span class="pseudonyme">Alexis Z.</span></span>
+                <meta itemprop="commentCount" content="2" />
+                <span>Commentaire de : <span class="pseudonyme" itemprop="author">Alexis O.</span></span>
+                <div class="note" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
                     <span> | Note :
+                        <meta itemprop="bestRating" content="5" />
+                        <i itemprop="ratingValue" style="display:none">3</i>
+                        <meta itemprop="worstRating" content="1" />
+                        <meta itemprop="ratingCount" content="2"/>
                         <i class="fa fa-star fa-star-filled" aria-hidden="true"></i>
                         <i class="fa fa-star fa-star-filled" aria-hidden="true"></i>
                         <i class="fa fa-star fa-star-filled" aria-hidden="true"></i>
@@ -179,13 +195,13 @@
                         <i class="fa fa-star" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p class="commentaire">
+                <p class="commentaire" itemprop="comment">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere interdum dolor nec aliquet. Nulla sit amet ex pretium nunc imperdiet dignissim sit amet at diam. Curabitur urna mi, laoreet a commodo a, volutpat et elit. Donec nisl ipsum, euismod non eros non, cursus tempor neque. Donec nec porta lacus. Donec sagittis hendrerit ex, eu bibendum tortor egestas vel.
                 </p>
             </div>
             <div class="col-md-6 avis">
+                <span>Commentaire de : <span class="pseudonyme" itemprop="author">Jules A.</span></span>
                 <div class="note">
-                    <span>Commentaire de : <span class="pseudonyme">Jules A.</span></span>
                     <span> | Note :
                         <i class="fa fa-star fa-star-filled" aria-hidden="true"></i>
                         <i class="fa fa-star fa-star-filled" aria-hidden="true"></i>
@@ -193,9 +209,25 @@
                         <i class="fa fa-star fa-star-filled" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
                     </span>
-                <p class="commentaire">
+                </div>
+                <p class="commentaire" itemprop="comment">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere interdum dolor nec aliquet. Nulla sit amet ex pretium nunc imperdiet dignissim sit amet at diam. Curabitur urna mi, laoreet a commodo a, volutpat et elit. Donec nisl ipsum, euismod non eros non, cursus tempor neque. Donec nec porta lacus. Donec sagittis hendrerit ex, eu bibendum tortor egestas vel.
                 </p>
+            </div>
+        </div>
+
+        <!-- Redaction -->
+        <div class="row">
+            <div class="col-md-6 redaction">
+                <span>Auteur:</span><span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                    <span>Jules Carmaux</span>
+                    <meta itemprop="name" content="differentes-categories-droit-auteur"/>
+                    <div itemscope itemprop="logo" itemtype="https://schema.org/ImageObject" style="display:none;">
+                        <img itemprop="url" src="../media/logo.png" />
+                    </div>
+                </span>
+                <span>Date:</span><span itemprop="datePublished">2016-12-20</span>
+                <span>Date:</span><span itemprop="dateModified">2016-12-20</span>
             </div>
         </div>
 
@@ -216,17 +248,27 @@
             </div>
         </div>
 
-        <!-- Footer -->
+       <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
                     <p>Copyright &copy; differentes-categories-droit-auteur 2017 - <a href="../mentions-legales.html">Mentions légales</a></p>
                 </div>
             </div>
-        <SCRIPT charset="utf-8" type="text/javascript" src="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2F714ea5a2-1649-40fa-b378-2ec88b87d7ed&Operation=GetScriptTemplate"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2F714ea5a2-1649-40fa-b378-2ec88b87d7ed&Operation=NoScript">Widgets Amazon.fr</A></NOSCRIPT>
+       <SCRIPT charset="utf-8" type="text/javascript" src="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2F5d59dd05-90c5-485a-a051-8e90ee74e8b1&Operation=GetScriptTemplate"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2F5d59dd05-90c5-485a-a051-8e90ee74e8b1&Operation=NoScript">Widgets Amazon.fr</A></NOSCRIPT>
         </footer>
+            
+            <!-- Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    </div>
+      ga('create', 'UA-89744603-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
     <!-- /.container -->
 
     <!-- jQuery -->
