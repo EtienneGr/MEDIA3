@@ -32,7 +32,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
     <!-- Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -212,17 +212,9 @@
         <div class="row">
             <div class="col-md-12">
                 <p>Partager l'article sur les réseaux sociaux :</p>
-                <!-- Facebook -->
-                <!-- Your share button code -->
-                <div class="fb-share-button"
-                    data-href="http://differentes-categories-droit-auteur.fr/articles/liberte-panorama.html"
-                    data-layout="button_count">
-                </div>
-                <!-- Twitter -->
-                <a href="https://twitter.com/share" class="twitter-share-button" data-lang="fr">Tweeter</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-                <!-- Google+ -->
-                <div class="g-plus" data-action="share" data-href="http://differentes-categories-droit-auteur.fr/articles/liberte-panorama.html"></div>
+                <span class="tacTwitter"></span><a data-size="large" href="https://twitter.com/share" class="twitter-share-button" data-via="twitter_username" data-count="none" data-dnt="true"></a> <!-- Twitter -->
+                <div class="fb-like" data-layout="button" data-action="recommend" data-share="false"></div> <!-- Facebook -->
+                <div class="g-plus" data-action="share" data-annotation="none" data-height="24"></div> <!-- Google+ -->
             </div>
         </div>
 
@@ -233,7 +225,7 @@
                     <p>Copyright &copy; differentes-categories-droit-auteur 2017 - <a href="../mentions-legales.html">Mentions légales</a></p>
                 </div>
             </div>
-        <SCRIPT charset="utf-8" type="text/javascript" src="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2Fff47bae5-3384-4fa7-be67-3bf3b8aec1a4&Operation=GetScriptTemplate"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2Fff47bae5-3384-4fa7-be67-3bf3b8aec1a4&Operation=NoScript">Widgets Amazon.fr</A></NOSCRIPT>
+            <SCRIPT charset="utf-8" type="text/javascript" src="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2Fff47bae5-3384-4fa7-be67-3bf3b8aec1a4&Operation=GetScriptTemplate"> </SCRIPT> <NOSCRIPT><A rel="nofollow" HREF="http://ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&MarketPlace=FR&ID=V20070822%2FFR%2Fhttpdifferent-21%2F8010%2Fff47bae5-3384-4fa7-be67-3bf3b8aec1a4&Operation=NoScript">Widgets Amazon.fr</A></NOSCRIPT>
         </footer>
 
     </div>
@@ -245,24 +237,9 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Google+ -->
-    <script src="https://apis.google.com/js/platform.js" async defer>
-      {lang: 'fr'}
-    </script>
-
-    <!-- Facebook -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.8";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
     <!-- Cookies -->
     <script type="text/javascript" src="../plugins/tarteaucitron/tarteaucitron.js"></script>
-        <script type="text/javascript">
+    <script type="text/javascript">
         tarteaucitron.init({
             "hashtag": "#tarteaucitron", /* Automatically open the panel with the hashtag */
             "highPrivacy": false, /* disabling the auto consent feature on navigation? */
@@ -273,8 +250,9 @@
             "removeCredit": false /* remove the credit link? */
         });
     </script>
-    <script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('adsense');</script><!-- Cookies Google Adsense -->
-    <script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('amazon');</script><!-- Cookies Amazon -->
+    <script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('facebook');</script><!-- Cookies Facebook -->
+    <script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('twitter');</script><!-- Cookies Twitter -->
+    <script type="text/javascript">(tarteaucitron.job = tarteaucitron.job || []).push('gplus');</script><!-- Cookies Google+ -->
 
 </body>
 
